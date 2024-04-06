@@ -1,0 +1,149 @@
+header{
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 24px;
+}
+
+header img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+    opacity: 0.6;
+}
+
+li{
+    list-style: none;
+}
+
+.navigation_link{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 3px;
+    transition: .5s;
+}
+
+.navigation_link:hover{
+    color: rgb(255, 68, 68);
+    border-bottom: 1px solid rgb(255, 68, 68);
+}
+
+.navigation_social{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-left: 500px;
+}
+
+.navigation_social i{
+    font-size: 20px;
+    opacity: 0.6;
+    color: white;
+    transition: all 0.4s;
+}
+
+.navigation_social i:hover{
+    opacity: 1;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 440px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img{
+        margin-left: 20px;
+        width: 250px;
+    }
+
+    .navigation{
+        gap: 25px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .navigation a{
+        font-size: 14px;
+        font-weight: 250;
+    }
+
+    .navigation_social{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img{
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .navigation{
+        gap: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .navigation a{
+        font-size: 13px;
+        font-weight: 200;
+    }
+
+    .navigation_social{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 385px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img{
+        margin-left: 20px;
+    }
+
+    .navigation{
+        gap: 10px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+
+    .navigation a{
+        font-size: 12px;
+        font-weight: 150;
+    }
+
+    .navigation_social{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+}
